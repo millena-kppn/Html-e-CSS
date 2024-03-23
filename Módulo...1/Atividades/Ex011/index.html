@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em Html5</title>
+</head>
+<body>
+    <h1>Imagem dinámica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <!--O source media type deve seguir a ordem da primeira foto maior em baixo e a menor em cima-->
+        <source media="(max-width: 750px)" srcset="imgs/img-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imgs/img-m.png" type="image/png"><!--O source media type serve para trocar a imagem conforme for a midia podemos colocar como valor max-width ou min-width -->
+    <img src="imgs/img-g.png" alt="Imagem flexível">
+    </picture> <!--A tag picture pede uma imagem para apresentar através a tag img-->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/trem-busina.mp3" controls></audio><!--A tag audio é maiscompativel com MP3 WAV OGG--><!--O controls mostra o controle de audio-->
+    <h2>Reprodução de outra forma, más com mesmo áudio</h2>
+    <audio preload="metadata" controls loop>
+        <source src="midia/trem-busina.mp3" type="audio/mpeg">
+    </audio><!--Neste formato a tag audio ganha a tag source type--><!--Não podemos esquecer do tipo=type de áudio que nosso arquivo é, exemplo /mpeg = mp3 -->
+  
+
+</body>
+</html>

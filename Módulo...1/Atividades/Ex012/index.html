@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos localmente</h1>
+    <p>Este vídeo está hospedado no meu própio servidor.</p>
+    <video src="midia/Meu-Video.mp4" width="500" controls loop></video><!--Está é a forma simples de colocar um video--><!--Nunca esquecer o paremetro controls tanto em vídeo ou em audio-->
+
+    <video width="800" height="500" poster="img/img-capa-vulcao.png" controls loop><!--O atributo poster é a capa do vídeo-->
+        <source src="midia/Meu-Video.mp4" type="video/mp4">
+<!-- --<source src="outro tipo de video.ogg" type="video/ogg">-- Neste outra tag usamos outros arquivos caso o primeiro n abra no navegador, pois cada navegador aceita um formato de arquivo, podemos colocar varíos source além do primeiro.-->
+    </video>
+
+    <h1>Inserindo Vídeos do YouTube</h1>
+    <iframe width="800" height="500" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=kJ4O8Q3qx9GqK2Je" loop title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <h1>Inserindo vídeo do Vineo</h1>
+    <iframe src="https://player.vimeo.com/video/318206990?h=653ef95bb1&color=ccff17&title=0&byline=0&portrait=0" width="800" height="500" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen loop></iframe>
+
+</body>
+</html>

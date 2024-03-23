@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <!-- css local -->
+    <style>
+        /* Fontes Externas */
+        @font-face {
+            font-family:'Mexicana'; /*Aqui escolhemos o nome que quisermos*/
+            src: url('fontes/Tacos de Tijuana.ttf') format('truetype'); 
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Tipos de format()
+           - opentype (otf)
+           - truetype (ttf)
+           - embedded-opentype
+           - truetype-aat (Apple Advanced Typography)
+           - svg */
+
+        body{
+            font-family:'Arial', Helvetica, sans-serif;
+        }
+        h1{
+            font-family:'Mexicana', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>TITULO</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aliquam voluptas odio id nobis assumenda pariatur illo nisi maiores aliquid, quasi sequi corporis? Dolorum id laboriosam corporis nulla a magni.</p>
+</body>
+</html>
