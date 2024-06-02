@@ -12,10 +12,15 @@
          background-image: url(imagens/wallpaper002.jpg);
          background-repeat: no-repeat;
          background-position: 50% 50%;
-         background-size: cover;
 /* o cover vai ajustar o tamanho da tela ajustando a imagem 
 conforme a viewport  */
+         background-size: cover;
+/* para rolar a tela e o fundo ficar fixo usamos a declaração background-attachment: fixed; */
+         background-attachment: fixed;
       }
+/* Shorthand para conf de fundo background
+background: color > image > position > repeat > attachment 
+ATENÇÃO o size tera que ter uma declaração */
       main{
          background-color: white;
          width: 400px;
