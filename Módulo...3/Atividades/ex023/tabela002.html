@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tabelas</title>
+   <style>
+      body{
+         font-family: Arial, Helvetica, sans-serif;
+      }
+      table{
+         width: 500px;
+         border-collapse: collapse;
+      }
+      th, td{
+         border: 1px solid black;
+         padding: 10px;
+      }
+      thead, tfoot {
+         background-color: gray;
+         color: white;
+      }
+      /* estilizando class  */
+      .num{
+         text-align: right;
+      }
+   </style>
+</head>
+<body>
+   <h1>Uso de tabelas grandes</h1>
+   <!-- ANATOMIA PARA TABELAS GRANDES  
+    TABLE 
+    THEAD
+         TR, TD, TH
+      TBODY
+         TR, TD, TH
+      TFOOT
+         TR, TD, TH
+   -->
+         <table>
+            <thead>
+             <tr>
+               <th>Estado</th>
+               <th>População</th>
+               <th>País Comparavél (habitante)</th>
+             </tr>
+            </thead>
+            <tbody>
+            <tr>
+               <td>São Paulo</td>
+               <td class="num">00 000 000</td>
+               <td>comparação01</td>
+            </tr>
+            <tr>
+               <td>Mins Gerais</td>
+               <td class="num">00 000 000</td>
+               <td>comparação02</td>
+            </tr>
+            <tr>
+               <td>Rio de Janeiro</td>
+               <td class="num">00 000 000</td>
+               <td>comparação03</td>
+            </tr>
+            <tr>
+               <td>Bahia</td>
+               <td class="num">00 000 000</td>
+               <td>comparação04</td>
+            </tr>
+            <tr>
+               <td>Paraná</td>
+               <td class="num">00 000 000</td>
+               <td>comparação05</td>
+            </tr>
+            <tr>
+               <td>Rio Grande do Sul </td>
+               <td class="num">00 000 000</td>
+               <td>comparação06</td>
+            </tr>
+            <tr>
+               <td>Pernambuco</td>
+               <td class="num">00 000 000</td>
+               <td>comparação07</td>
+            </tr>
+            <tr>
+               <td>Ceará</td>
+               <td class="num">00 000 000</td>
+               <td>comparação08</td>
+            </tr>
+            <tr>
+               <td>Pará</td>
+               <td class="num">00 000 000</td>
+               <td>comparação09</td>
+            </tr>
+            <tr>
+               <td>Santa Catarina</td>
+               <td class="num">00 000 000</td>
+               <td>comparação10</td>
+            </tr>
+            <tr>
+               <td>Goiás</td>
+               <td class="num">00 000 000</td>
+               <td>comparação11</td>
+            </tr>
+            <tr>
+               <td>Maranhão</td>
+               <td class="num">00 000 000</td>
+               <td>comparação12</td>
+            </tr>
+            <tr>
+               <td>Paraíba</td>
+               <td class="num">00 000 000</td>
+               <td>comparação13</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="num">00 000 000</td>
+               <td>comparação14</td>
+            </tr>
+            <tr>
+               <td>Espírito Santo</td>
+               <td class="num">00 000 000</td>
+               <td>comparação15</td>
+            </tr>
+            </tbody>
+            <tfoot>
+               <tr>
+                  <th>Total de Habitantes</th>
+                  <td class="num"><strong>0000000</strong></td>
+                  <td class="num"><strong>0000000</strong></td>
+               </tr>
+               
+            </tfoot>
+         </table>
+</body>
+</html>
