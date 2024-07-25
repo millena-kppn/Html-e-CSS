@@ -11,6 +11,13 @@
       table{
          width: 500px;
          border-collapse: collapse;
+         position: relative; /* confg comportamental (cabeçalho) */
+      }
+      caption{
+         background-color: rgb(155, 153, 153);
+         padding: 10px;
+         font-size: 1.5em;
+         font-weight: bold;
       }
       th, td{
          border: 1px solid black;
@@ -24,12 +31,25 @@
       .num{
          text-align: right;
       }
+      /* efeito zebrado na planinha  */
+      tbody > tr:nth-child(2n){  /* uso de pseudo class */
+         background-color: lightgray;
+         /* nesta declaração posso usar valores com N ou 
+         even (par) e ood (impar) */
+      }
+      /* cabeçalho fixo */
+      thead > tr > th {
+         position: sticky; /* fixo|colado */
+         top: -1px;
+         background-color: gray;
+      }
    </style>
 </head>
 <body>
    <h1>Uso de tabelas grandes</h1>
    <!-- ANATOMIA PARA TABELAS GRANDES  
     TABLE 
+    CAPTION = descrição da tabela/titulo
     THEAD
          TR, TD, TH
       TBODY
@@ -38,11 +58,12 @@
          TR, TD, TH
    -->
          <table>
+            <caption>População das Unidades Federativas</caption>
             <thead>
              <tr>
-               <th>Estado</th>
-               <th>População</th>
-               <th>País Comparavél (habitante)</th>
+               <th scope="col">Estado</th>
+               <th scope="col">População</th>
+               <th scope="col">País Comparavél (habitante)</th>
              </tr>
             </thead>
             <tbody>
@@ -121,14 +142,72 @@
                <td class="num">00 000 000</td>
                <td>comparação15</td>
             </tr>
+            <tr>
+               <td>Mato Grosso</td>
+               <td class="num">00 000 000</td>
+               <td>comparação16</td>
+            </tr>
+               <td>Rio Grande do Norte</td>
+               <td class="num">00 000 000</td>
+               <td>comparação17</td>
+            </tr>
+            <tr>
+               <td>Piauí</td>
+               <td class="num">00 000 000</td>
+               <td>comparação18</td>
+            </tr>
+            <tr>
+               <td>Alagoas</td>
+               <td class="num">00 000 000</td>
+               <td>comparação19</td>
+            </tr>
+            <tr>
+               <td>Distrito Federal</td>
+               <td class="num">00 000 000</td>
+               <td>comparação20</td>
+            </tr>
+            <tr>
+               <td>Mato Grosso do Sul</td>
+               <td class="num">00 000 000</td>
+               <td>comparação21</td>
+            </tr>
+            <tr>
+               <td>Sergipe</td>
+               <td class="num">00 000 000</td>
+               <td>comparação22</td>
+            </tr>
+            <tr>
+               <td>Rondônia</td>
+               <td class="num">00 000 000</td>
+               <td>comparação23</td>
+            </tr>
+            <tr>
+               <td>Tocantins</td>
+               <td class="num">00 000 000</td>
+               <td>comparação24</td>
+            </tr>
+            <tr>
+               <td>Amapá</td>
+               <td class="num">00 000 000</td>
+               <td>comparação25</td>
+            </tr>
+            <tr>
+               <td>Acre</td>
+               <td class="num">00 000 000</td>
+               <td>comparação26</td>
+            </tr>
+            <tr>
+               <td class="num">Roraima</td>
+               <td class="num">00 000 000</td>
+               <td>comparação27</td>
+            </tr>
             </tbody>
             <tfoot>
                <tr>
-                  <th>Total de Habitantes</th>
+                  <th scope="row">Total de Habitantes</th>
                   <td class="num"><strong>0000000</strong></td>
                   <td class="num"><strong>0000000</strong></td>
                </tr>
-               
             </tfoot>
          </table>
 </body>
